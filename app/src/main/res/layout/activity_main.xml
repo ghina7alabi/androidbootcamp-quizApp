@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.quizapplication3rdproject.MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/date"
+            android:inputType="date" />
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="@string/question1" />
+        <!--first question-->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/RBq1_o1"
+                style="@style/checkBox"
+                android:text="@string/galileo_galilei" />
+
+            <RadioButton
+                android:id="@+id/RBq1_o2"
+                style="@style/checkBox"
+                android:onClick="question1"
+                android:text="@string/hans_lippershey" />
+
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="@string/question2" />
+        <!--second question-->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/RBq2_o1"
+                style="@style/checkBox"
+                android:text="@string/two" />
+
+            <RadioButton
+                android:id="@+id/RBq2_o2"
+                style="@style/checkBox"
+                android:text="@string/three" />
+
+            <RadioButton
+                android:id="@+id/RBq2_o3"
+                style="@style/checkBox"
+                android:onClick="question2"
+                android:text="@string/four" />
+
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="@string/question3" />
+        <!--third question-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/RBq3_o1"
+                style="@style/checkBox"
+                android:onClick="question3"
+                android:text="@string/hottest_planet" />
+
+            <CheckBox
+                android:id="@+id/RBq3_o2"
+                style="@style/checkBox"
+                android:text="@string/largest_planet" />
+
+            <CheckBox
+                android:id="@+id/RBq3_o3"
+                style="@style/checkBox"
+                android:layout_marginTop="-9dp"
+                android:onClick="question3"
+                android:text="@string/morning_star" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="@string/question4" />
+        <!--fourth question-->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/RBq4_o1"
+                style="@style/checkBox"
+                android:text="@string/sun" />
+
+            <RadioButton
+                android:id="@+id/RBq4_o2"
+                style="@style/checkBox"
+                android:onClick="question4"
+                android:text="@string/moon" />
+
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="@string/question5" />
+        <!--fifth question-->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/RBq5_o1"
+                style="@style/checkBox"
+                android:text="@string/_26" />
+
+            <RadioButton
+                android:id="@+id/RBq5_o2"
+                style="@style/checkBox"
+                android:onClick="question5"
+                android:text="@string/_27" />
+
+            <RadioButton
+                android:id="@+id/RBq5_o3"
+                style="@style/checkBox"
+                android:text="@string/_28" />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="@string/question6" />
+        <!--sixth question-->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/RBq6_o1"
+                style="@style/checkBox"
+                android:onClick="question6"
+                android:text="@string/pluto" />
+
+            <RadioButton
+                android:id="@+id/RBq6_o2"
+                style="@style/checkBox"
+                android:text="@string/mercury" />
+
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="@string/question7" />
+        <!--seventh question-->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/RBq7_o1"
+                style="@style/checkBox"
+                android:text="@string/jupiter" />
+
+            <RadioButton
+                android:id="@+id/RBq7_o2"
+                style="@style/checkBox"
+                android:onClick="question7"
+                android:text="@string/mars" />
+
+            <RadioButton
+                android:id="@+id/RBq7_o3"
+                style="@style/checkBox"
+                android:text="@string/venus" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/light_purple"
+            android:onClick="submit"
+            android:text="@string/submit_and_recieve_scores"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
